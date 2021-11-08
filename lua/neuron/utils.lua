@@ -48,7 +48,7 @@ function M.feedraw(s)
   api.nvim_feedkeys(s, "n", false)
 end
 
-local ANY_LINK_RE = "%[?%[%[(%w+)[|%w%s]*%]%]%]?"
+local ANY_LINK_RE = "%[?%[%[([%w_-]*)[|%w%s]*%]%]%]?"
 local TRIPLE_LINK_RE = "%[%[%[(%w+)[|%w%s]*%]%]%]"
 local DOUBLE_LINK_RE = "%[%[(%w+)[|%w%s]*%]%]"
 
